@@ -16,3 +16,7 @@ pip install python-telegram-bot requests
 
 
 If this project helped you, consider leaving a star ⭐!
+
+### Features
+- [X] Send and recieve requests
+- [ ] Ability to pick a custom language in your chat (coming soon)
