@@ -1,12 +1,18 @@
 # Telegram-Bot-Gemini-AI
-Simple bot in telegram that connects to gemini ai to send requests, and send them back.
 
-Requriments:
+A simple Telegram bot that connects to Gemini AI, sends requests, and returns the responses.
 
-Linux or Windows Enviroment
+### Requirements:
+- Linux or Windows environment
+- Telegram
+- [Gemini AI Key](https://g.co/ai/idxGetGeminiKey)
+  
+### Installation:
 
-Telegram
+Run the following command to install the necessary packages:
+```bash
+pip install python-telegram-bot requests
+```
 
-Gemini AI Key (https://g.co/ai/idxGetGeminiKey)
 
-```pip install python-telegram-bot requests```
+If this project helped you, consider leaving a star ⭐!
