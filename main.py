@@ -1,7 +1,12 @@
 import logging
 import requests
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Enable logging
 logging.basicConfig(
@@ -11,10 +16,9 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Replace with your bot token
-BOT_TOKEN = 'YOUR_BOT_TOKEN' 
-# Replace with your Google Gemini API key
-GEMINI_API_KEY = 'YOUR_GEMINI_KEY' 
+# Read the bot token and Gemini API key from environment variables
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
 # Google Gemini API endpoint
 GEMINI_API_URL = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={GEMINI_API_KEY}'
