@@ -11,8 +11,9 @@ A simple Telegram bot that connects to Gemini AI, sends requests, and returns th
 
 Run the following command to install the necessary packages:
 ```bash
-pip install python-telegram-bot requests
+pip install python-telegram-bot requests python-dotenv
 ```
+Change Keys in .env
 
 
 If this project helped you, consider leaving a star ⭐!
